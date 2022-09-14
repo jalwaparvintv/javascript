@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    mark:<input type="text" id="mark"><br>
+    <button onclick="mark()">result</button><br>
+    result:<input type="text" id="result">
+    
+</body>
+<script>
+    function mark()
+ {
+    var mark;
+    mark=Number(document.getElementById("mark").value);
+if(mark>=60)
+{ 
+  alert("hi");
+    document.getElementById("result").value="first division";
+}
+else if(mark>=45 &&  mark<=59)
+{
+    document.getElementById("result").value="second division";
+
+}
+
+else if(a>=33 && a<=44)
+{
+  document.getElementById("result").value="third division";
+}
+ 
+else if( mark<33 )
+{
+document.getElementById("result").value="fail";
+
+}
+else
+{
+alert("absent")
+}
+
+
+ 
+}
+ 
+
+
+
+
+</script>
+</html>

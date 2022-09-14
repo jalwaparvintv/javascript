@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <body>
+        <form action="">
+
+        <input type="text" id="name" pattern="[A-Za-z]{3}" placeholder="enter name" onkeyup="clearmsg('sp1')">
+        <span id="sp1" style="color: red;"> </span>
+        <br>
+
+        <input type="text" id="age" pattern="[0-99]" placeholder="enter age" onkeyup="clearmsg('sp2')"   >
+        <span id="sp2" style="color:red ;"> </span>
+        <br>
+
+        <input type="text" id="phone number" pattern="[0-9]{10}" placeholder="enter phone number" onkeyup="clearmsg('sp3')">
+        <span id="sp3" style="color:red;">  </span>
+        <br>
+
+        <input type="text" id="email id" pattern="[^@\s]+@[^@\s]+" placeholder="enter email id"  onkeyup="clearmsg('sp4')">
+        <span id="sp4" style="color:red ;"></span>
+        <br> 
+
+        <button onclick="return validation()">submit</button>
+        </form>
+
+
+        </body>
+        <script>
+        function validation()
+        {
+        var name=document.getElementById("name").value;
+        var age=document.getElementById("age").value;
+
+        var phone=document.getElementById("phone number").value;
+        var email=document.getElementById("email id").value;
+
+        if(name=="")
+        {
+        document.getElementById("sp1").innerHTML="enter your name";
+                    return false;
+        }
+        if(age == "")
+        {
+        document.getElementById("sp2").innerHTML="enter your age";
+        return false;
+        }
+        if(phone=="")
+       {
+        document.getElementById("sp3").innerHTML="enter your phone number";
+        return false;
+        }
+        if(email =="")
+       {
+        document.getElementById("sp4").innerHTML="enter your email id";
+                    return false;
+        }
+       }
+       function clearmsg(sp)
+       {
+        document.getElementById(sp).innerHTML="";
+       }
+         </script>
+        </html>

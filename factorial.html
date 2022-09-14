@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="number">
+    <button onclick="myfunction()"> click</button>
+
+    result<input type="text" id="demo">
+
+    
+</body>
+<script>
+    function myfunction()
+    {
+         var fact=1,a,i;
+
+        a=Number(document.getElementById("number").value);
+
+        for(i=1;i<=a;i++)
+        {
+            fact=fact*i;
+
+        }
+
+         document.getElementById("demo").value=fact;
+
+      }
+
+    // {var b;
+
+    // b=number(document.getElementById("number"))
+
+
+    // }
+   
+
+
+</script>
+</html>
